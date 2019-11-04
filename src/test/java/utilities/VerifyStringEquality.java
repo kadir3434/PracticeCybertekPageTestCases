@@ -3,8 +3,8 @@ package utilities;
 public class VerifyStringEquality {
     public static void verifyStrings(String expectedResult, String actualResult) {
         if (expectedResult.equals(actualResult)) {
-            System.out.println("Expected Result: \n" + "\"" + expectedResult + "\"" + "\n\nActual Result: \n" + actualResult +
-                    "\n\n " + "EXPECTED RESULT AND ACTUAL RESULT ARE SAME SO TEST PASSED");
+            System.out.println("Expected Result: \n" + "\"" + expectedResult + "\"" + "\n\nActual Result: \n" + "\"" + actualResult +
+                    "\"" + "\n\n " + "EXPECTED RESULT AND ACTUAL RESULT ARE SAME SO TEST PASSED");
         } else {
             System.out.println("Expected Result: \n" + "\"" + expectedResult + "\n\nActual Result: \n" + "\"" + actualResult + "\"" +
                     "\n\n " + "EXPECTED RESULT AND ACTUAL RESULT ARE NOT SAME SO TEST FAILED");
