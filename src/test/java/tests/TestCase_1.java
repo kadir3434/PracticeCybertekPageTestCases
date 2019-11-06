@@ -1,16 +1,12 @@
 package tests;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import utilities.BrowserFactory;
 import utilities.VerifyStringEquality;
-
 public class TestCase_1 {
     public static void main(String[] args) {
         WebDriver driver = BrowserFactory.getDriver("chrome");
         driver.get("https://practice-cybertekschool.herokuapp.com/");
-
         driver.findElement(By.xpath("//*[@id=\"content\"]/ul/li[43]/a")).click();
         driver.findElement(By.name("full_name")).sendKeys("Hello");
         driver.findElement(By.name("email")).sendKeys("email@email.com");
