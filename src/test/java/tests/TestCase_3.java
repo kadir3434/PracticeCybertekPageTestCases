@@ -15,7 +15,7 @@ public class TestCase_3 {
         String expectedResultMessage = "Clicked on button one!";
         String actualResultMessage = driver.findElement(By.id("result")).getText();
         VerifyStringEquality.verifyStrings(expectedResultMessage, actualResultMessage);
-        BrowserUtils.wait(1);
+        BrowserUtils.wait(3);
         driver.close();
     }
 }
